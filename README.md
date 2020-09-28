@@ -1,8 +1,8 @@
-# **sharedHet.py**: a Python script for detecting asexual reproduction and selfing in diploid species based on shared heterozygosity.
+**sharedHet.py**: a Python script for detecting asexual reproduction and selfing for diploid species based on shared heterozygosity.
 
-**Under asexual reproduction**, the heterozygous loci in the parent genome will be passed on to its asexual descendants. So the clonemates will share most of the heterozygous loci in their genomes except the ones caused by somatic mutations and genotyping mistakes.
+![](https://github.com/leiyu37/sharedHet/pics/illustration.png)
 
-**Under selfing**, each of the heterozygous loci in the parent genome will remain heterozygous in the selfing descendant with a probability of 0.5. So the selfing descendants will only have a subset of the heterozygous loci as that in the parent genome.
+
 
 For each pair of samples A and B, **sharedHet.py** calculates the following numbers:
 
@@ -10,13 +10,11 @@ For each pair of samples A and B, **sharedHet.py** calculates the following numb
 
 **Nab**: number of loci where both sample A and sample B are heterozygous.
 
-**Fab**: Nab/Na
-
 **Nb**: number of loci where sample B is heterozygous and sample A doesn't show missing value.
 
-**Nba**: number of loci where both sample A and sample B are heterozygous.
+**Fab**: Nab/Na
 
-**Fba**: Nba/Nb
+**Fba**: Nab/Nb
 
 **plot.R** can be used to process the output of **sharedHet.py** (see an example in results/01_sharedHet.txt), and detect asexual reproduction and selfing (see an example in results/results.png).
 
@@ -49,6 +47,8 @@ Usage example:
 **sharedHet.py** example.vcf sample_pop.txt
 
 **plot.R** can be used for processing the result "01_sharedHet.txt", and make the plot.
+
+![](https://github.com/leiyu37/sharedHet/tree/master/results/results.png)
 
 ## Contact:
 This script was written by Lei Yu, Marine Evolutionary Ecology Group, GEOMAR Helmholtz Center for Ocean Research Kiel, Germany.

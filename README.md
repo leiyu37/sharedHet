@@ -1,6 +1,6 @@
 **sharedHet.py**: a Python script for detecting asexual reproduction and selfing for diploid species based on shared heterozygosity.
 
-![](https://github.com/leiyu37/sharedHet/pics/illustration.png)
+[](https://github.com/leiyu37/sharedHet/pics/illustration.png)
 
 
 
@@ -48,7 +48,7 @@ Usage example:
 
 **plot.R** can be used for processing the result "01_sharedHet.txt", and make the plot.
 
-![](https://github.com/leiyu37/sharedHet/tree/master/results/results.png)
+[](https://github.com/leiyu37/sharedHet/tree/master/results/results.png)
 
 ## Contact:
 This script was written by Lei Yu, Marine Evolutionary Ecology Group, GEOMAR Helmholtz Center for Ocean Research Kiel, Germany.

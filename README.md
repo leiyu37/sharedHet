@@ -48,7 +48,7 @@ Usage example:
 
 **plot.R** can be used for processing the result "01_sharedHet.txt", and make the plot.
 
-[](./results/results.png)
+![](./results/results.png)
 
 ## Contact:
 This script was written by Lei Yu, Marine Evolutionary Ecology Group, GEOMAR Helmholtz Center for Ocean Research Kiel, Germany.

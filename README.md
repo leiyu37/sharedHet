@@ -1,6 +1,6 @@
 **sharedHet.py**: a Python script for detecting asexual reproduction and selfing for diploid species based on shared heterozygosity.
 
-[](https://github.com/leiyu37/sharedHet/pics/illustration.png)
+![](./pics/illustration.png)
 
 
 

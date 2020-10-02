@@ -12,9 +12,9 @@ For each pair of samples A and B, **sharedHet.py** calculates the following numb
 
 **Nb**: number of loci where sample B is heterozygous and sample A doesn't show missing value.
 
-**Fab**: Nab/Na
+**Fa**: Nab/Na
 
-**Fba**: Nab/Nb
+**Fb**: Nab/Nb
 
 **plot.R** can be used to process the output of **sharedHet.py** (see an example in results/01_sharedHet.txt), and detect asexual reproduction and selfing (see an example in results/results.png).
 

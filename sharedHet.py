@@ -99,7 +99,7 @@ f_in.close()
 
 # Calculation. Results are stored in "01_sharedHet.txt"
 f_out = open("01_sharedHet.txt", "w")
-f_out.write("Sample_01\tSample_02\tNa\tNab\tFab\tNb\tFba\n")
+f_out.write("Sample_01\tSample_02\tNa\tNab\tFa\tNb\tFb\n")
 
 n = len(i_sample_dict.keys())
 n_col = n + 9

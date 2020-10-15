@@ -100,6 +100,7 @@ f_in.close()
 # Calculation. Results are stored in "01_sharedHet.txt"
 f_out = open("01_sharedHet.txt", "w")
 f_out.write("Sample_01\tSample_02\tNa\tNab\tFa\tNb\tFb\n")
+f_out.close()
 
 n = len(i_sample_dict.keys())
 n_col = n + 9
@@ -110,11 +111,12 @@ for m in range(9, n_col-1):
         sample_02 = i_sample_dict[n]
         if (sample_01 in sample_pop_dict.keys()) and (sample_02 in sample_pop_dict.keys()):
             if sample_pop_dict[sample_01] == sample_pop_dict[sample_02]:
+                f_out = open("01_sharedHet.txt", "a")
                 f_out.write("{}\t{}".format(sample_01, sample_02))
                 na,nab,fab = calculateAB("temp.vcf",m,n)
                 nb,nba,fba = calculateBA("temp.vcf",m,n)
                 f_out.write("\t{}\t{}\t{}\t{}\t{}\n".format(na,nab,fab,nb,fba))
-f_out.close()
+                f_out.close()
 
 cmd = "rm temp.vcf"
 subprocess.call(cmd, shell="True")
